@@ -1,0 +1,9 @@
+version: '3.4'
+
+services:
+
+  wilpsocialmedia.apigateway:
+    image: ${DOCKER_REGISTRY-}wilpsocialmediaapigateway
+    build:
+      context: .
+      dockerfile: WilpSocialMedia.ApiGateway/Dockerfile
